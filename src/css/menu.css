@@ -1,0 +1,26 @@
+.menu {
+  background: url("../img/HIW/browsebg.png") center/cover;
+}
+.menu__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 55px;
+  /* identical to box height, or 110% */
+  text-align: center;
+  letter-spacing: 1.65px;
+  color: #010002;
+}
+.menu__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  /* or 169% */
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #546285;
+}
+.menu__subtitle_green {
+  color: #35b8be;
+}

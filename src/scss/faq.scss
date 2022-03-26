@@ -1,0 +1,86 @@
+.faq {
+    padding-bottom: 134px;
+    padding-top: 260px;
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 51px;
+        line-height: 55px;
+        /* identical to box height, or 108% */
+        letter-spacing: 1.65px;
+        color: #35b8be;
+        padding-bottom: 29px;
+        padding-top: 140px;
+        background: url(../img/nav/bgfreshtext.png);
+    }
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        /* or 134% */
+        letter-spacing: 0.36px;
+        color: #546285;
+        margin-bottom: 47px;
+        max-width: 540px;
+        height: auto;
+        // transition: height 0.4s all;
+        // transform: scaleY(1);
+        // transition: transform 0.7s ease;
+        // overflow-y: hidden;
+        // transition: 2.1s all;
+        transition-duration: 3s;
+
+        &_hidden {
+            height: 0;
+            visibility: hidden;
+            margin-bottom: 0;
+            transform-origin: top;
+            transform: scaleY(0);
+            overflow-y: hidden;
+            // transition: 0.4s all;
+            // animation: slideUp 1s forwards;
+            // transform: translate(-50%, -50%);
+            transition-duration: 0.4s;
+            ::before{
+                transition: 5.1s all; 
+                
+            }
+            ::after{
+                transition: 5.1s all;  
+                transform: scaleY(1);
+            }
+        }
+    }
+    &__moreBtn {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration-line: underline;
+        color: #6035bc;
+        margin-bottom: 100px;
+        display: inline-block;
+    }
+
+    &__allBtn {
+        // font-style: normal;
+        // font-weight: normal;
+        // font-size: 17px;
+        // line-height: 20px;
+        // /* identical to box height, or 118% */
+        // background: url("../img/online/btnbgfaq.png");
+        // text-align: center;
+        // color: #ffffff;
+        // padding: 20px 35px;
+        // border-radius: 6px;
+        // border: none;
+        // cursor: pointer;
+        // text-decoration: none;
+        @include btn;
+    }
+}

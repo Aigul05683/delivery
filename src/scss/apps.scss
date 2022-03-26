@@ -1,0 +1,70 @@
+@mixin nav($bg) {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 75px;
+    background: $bg;
+    cursor: pointer;
+}
+.apps {
+    padding: 135px 0 120px;
+    &__title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 55px;
+        /* identical to box height, or 110% */
+        text-align: center;
+        letter-spacing: 1.65px;
+        color: #35b8be;
+        margin-bottom: 65px;
+    }
+    & .apps-slide {
+        max-width: 333px;
+        margin: 0 auto;
+        &__img {
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 40px;
+        }
+        &__title {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 22px;
+            /* identical to box height, or 110% */
+            text-align: center;
+            letter-spacing: 0.66px;
+            color: #08090a;
+            margin-bottom: 15px;
+        }
+        &__text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+            /* or 150% */
+            text-align: center;
+            letter-spacing: 0.36px;
+            color: #546285;
+        }
+    }
+    & .owl-theme .owl-nav {
+        margin-top: 0;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+        height: 75px;
+        & .customNextBtn {
+            @include nav(url("../img/HIW/Vectorright.png"));
+            right: 0;
+            background: url("../img/HIW/Vectorright.png") center/cover;
+        }
+        & .customPrevBtn {
+            @include nav(url("../img/HIW/Vectorleft.png"));
+            left: 0;
+            background: url("../img/HIW/Vectorleft.png") center/cover;
+        }
+    }
+}

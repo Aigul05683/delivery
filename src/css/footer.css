@@ -1,0 +1,7 @@
+.footer {
+  background: url("../img/footer/footerbg.png") center/cover;
+  padding: 100px 0 60px;
+}
+.footer-column__logo {
+  margin-bottom: 25px;
+}
